@@ -1,0 +1,101 @@
+#my-portfolio {
+  padding: 0;
+  padding-top: .8rem;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-display {
+  margin: .5rem 0 .5rem 0;
+  background-color: #f4f4f4;
+  border: 3px solid #192231;
+  border-radius: 10px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  width: 100%;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.clip-bottom,
+.clip-top {
+  height: 10rem;
+  z-index: 3;
+}
+.clip-bottom {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 55%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 55%, 0 95%);
+}
+.clip-top {
+  -webkit-clip-path: polygon(50% 45%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+  clip-path: polygon(50% 45%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+}
+.section-header.clip-top {
+  padding-top: 5.5rem;
+  border-bottom: none;
+}
+
+
+/*   Animated doors   */
+.door-wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.door-wrapper-hidden {
+  display: none;
+}
+  .door-panels {
+    width: 100%;
+    height: 100%;
+  }
+    #panel-left,
+    #panel-right {
+      height: 100%;
+      width: 50%;
+    }
+    #panel-left {
+      float: left;
+      background: radial-gradient(circle at right, #494e6b, #192231);
+      border-right: 1px groove #192231; 
+    }
+    #panel-right {
+      float: right;
+      background: radial-gradient(circle at left, #494e6b, #192231);
+      border-left: 1px groove #192231;
+    }
+    .slide-right {
+      animation: 4s ease-in slideRight;
+    }
+    .slide-left {
+      animation: 4s ease-in slideLeft;
+    }
+
+@keyframes slideLeft {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(100%)
+  }
+}
+
+
+
+

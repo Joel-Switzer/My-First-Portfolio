@@ -1,0 +1,222 @@
+/*     Header     */
+.site-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #192231;
+  color: #ffffff;
+  padding: 1em;
+  border-bottom: 3px solid #15b0f6;
+  z-index: 4;
+}
+  .absolute-header {
+    position: absolute;
+  }
+  .sticky-header {
+    position: fixed;
+    animation-name: headerDrop;
+    animation-duration: .5s;
+  }
+  .visible-header {
+    position: fixed;
+    transform: translateY(-100%);
+    animation-name: headerRise;
+    animation-duration: .5s;
+  }
+  .site-header h1 {
+    float: left;
+  }
+  .site-header span {
+    color: #15b0f6;
+  }
+
+
+/*    NAVBAR    */
+.nav-component {
+  float: right;
+  padding-top: 1rem;
+  margin-right: 2rem;
+}
+  .nav-component ul{
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-component li {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+  }
+  .nav-component .menu-div {
+    display: none;
+  }
+  .nav-component li:hover {
+    font-weight: bold;
+  }
+  .resume-download a {
+    text-decoration: none;
+    color: white;
+  }
+  .resume-download img {
+    padding-left: .4rem;
+  }
+  .resume-download:hover img {
+    transform: scale(1.1);
+  }
+  .active-link {
+    font-weight: bold;
+    color: #15b0f6;
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #15b0f6;
+  }
+
+/*    STICKY NAV    */
+.sticky-nav {
+  position: fixed;
+  cursor: pointer;
+  z-index: 4;
+  top: 1rem;
+  right: 1rem;
+  background:#192231;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+  .sticky-nav span, 
+  .sticky-nav span::after, 
+  .sticky-nav span::before {
+    position: absolute;
+    width: 2rem;
+    height: .2rem;
+    background: #f4f4f4;
+    border-radius: 100px;
+  }
+  .sticky-nav span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sticky-nav span::after {
+    content: '';
+    top: .5rem;
+  }
+  .sticky-nav span::before {
+    content: '';
+    top: -.5rem;
+  }
+
+/*    Wrapper for SVG effects. 
+      Unfortunately filter breaks fixed positioning, so it's disabled
+      Effect will work if placed in html    */
+  /* .site-header {
+    filter: url('#nav-detach-animation');
+  } */
+
+
+/*    Animations     */
+@keyframes headerDrop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes headerRise {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+
+/* Media queries for mobile menu */
+@media only screen and (max-width: 760px) {
+  .header-padding {
+    height: 4.4rem !important;
+  }
+  .site-header {
+    padding: .65rem;
+  }
+  .sticky-nav {
+    position: fixed;
+    cursor: pointer;
+    z-index: 4;
+    top: .5rem;
+    right: .5rem;
+    background:#192231;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+    .sticky-nav span, 
+    .sticky-nav span::after, 
+    .sticky-nav span::before {
+      position: absolute;
+      width: 2rem;
+      height: .15rem;
+      background: #f4f4f4;
+      border-radius: 100px;
+    }
+  .site-header h1 {
+    display: none;
+  }
+  .nav-component {
+    float: none;
+    text-align: center;
+    padding-top: .5rem;
+    margin: 0 2rem 0 2rem;
+  }
+  .nav-component ul {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .nav-component .menu-div {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px groove white;
+    border-radius: 5px;
+  }
+  .nav-component .menu-div span {
+    color: white;
+    margin-right: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+    .closed-menu {
+      display: none;
+    }
+    .open-menu {
+      display: show;
+    }
+    .menu-div span div {
+      display: inline-block;
+      color: white;
+      margin-right: .5rem;
+    }
+    .menu-div .rotate {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(90deg);
+    }
+  .nav-component li {
+    display: block;
+    padding: .2rem;
+    border-bottom: 1px groove white;
+  }
+  .active-link {
+    border-bottom: none;
+  }
+}
