@@ -71,7 +71,7 @@ body {
   background-size: cover;
   color: white;
   text-shadow: .1rem .1rem black;
-  padding-top: 1rem;
+  padding-top: 4.5rem;
   padding-bottom: 1rem;
 }
 
@@ -79,14 +79,16 @@ body {
   display: flex;
   align-self: center;
   text-align: center;
-  height: 100%;
   padding: 1rem;
 }
   .avatar-container img {
     border-radius: 50%;
+    height: 100%;
     width: 100%;
     border: 1px solid black;
+    animation: animateAvatar 3s ease-out;
   }
+
 #about-me .description {
   align-self: center;
   text-align: center;
@@ -96,6 +98,7 @@ body {
     padding-bottom: .5rem;
     font-size: 2em;
     border-bottom: 2px groove #15b0f6;
+    animation: animateDescription 3s ease-out;
   }
   @media only screen and (max-width: 1374px) {
     #about-me .description h1 {
@@ -103,17 +106,37 @@ body {
     }
   }
 
-.skill-icons {
+#skill-icons {
   display: flex;
   flex-wrap: wrap;
   max-width: 1135px;
 }
+  /* Cascade the animation effect on the skill icons */
+  .logo-box:nth-child(2) {
+    animation-delay: 3.3s;
+  }
+  .logo-box:nth-child(3) {
+    animation-delay: 3.6s;
+  }
+  .logo-box:nth-child(4) {
+    animation-delay: 3.9s;
+  }
+  .logo-box:nth-child(5) {
+    animation-delay: 4.2s;
+  }
+  .logo-box:nth-child(6) {
+    animation-delay: 4.5s;
+  }
+  .hidden {
+    visibility: hidden;
+  }
   .logo-box {
     display: flex;
     flex: 1;
     justify-content: center;
     text-align: center;
     margin: .5rem;
+    animation: animateSkills 1s ease-out 3s;
   }
   .logo-box h3{
     min-width: 135px;
@@ -122,6 +145,38 @@ body {
       max-width: 128px;
       max-height: 128px;
     }
+
+
+/* About me animations */
+@keyframes animateAvatar {
+  0% {
+    transform: translate(-200%) rotate(-360deg);
+  }
+  100% {
+    transform: translate(0%) rotate(0deg);
+  }
+}
+
+@keyframes animateDescription {
+  0% {
+    transform: translate(200%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes animateSkills {
+  0% {
+    opacity: 0;
+    transform: scale(.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 #my-portfolio {
   padding: 0;
@@ -132,5 +187,32 @@ body {
 
 #contact-me {
   background-color: #192231;
-  height: 65vh;
+  color: white;
+  min-height: 65vh;
+}
+#contact-me .social{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social div{
+  flex: 1;
+  text-align: center;
+  max-width: 360px;
+  min-width: 300px;
+  border: 5px solid white;
+  border-radius: 100px;
+  margin: .5rem;
+}
+.social label{
+  flex: 2;
+}
+#contact-me .social-icon {
+  float: left;
+  max-height: 120px;
+  max-width: 120px;
+  border: 2px solid white;
+  background: white;
+  width: 100%;
+  border-radius: 50%;
 }

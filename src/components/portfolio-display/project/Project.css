@@ -65,12 +65,15 @@
     .btn-demo, 
     .btn-source {
       position: absolute;
+      display: flex;
+      text-align: center;
       bottom: 5%;
       font-weight: bold;
       min-width: 7rem;
+      min-height: 50px;
       transform: translateX(-50%);
-      padding: 1rem;
       border-radius: 100px;
+      border: 2px groove black;
     }
     .btn-demo {
       left: 72%;
@@ -78,9 +81,20 @@
     .btn-source {
       left: 28%;
     }
+    .btn-source img,
+    .btn-demo img {
+      padding-left: .2rem;
+      height: 40px;
+    }
+    .btn-demo label, 
+    .btn-source label {
+      margin: auto .5rem;
+    }
     .btn-demo:hover, 
     .btn-source:hover {
-      background-color: lightgreen;
+      transition: .5s;
+      background-color: #15b0f6;
+      border: 2px solid #15b0f6;
     }
     
 /*  CSS for animation  */

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Project.css';
 
+// Icons
+import IconGithub from '../../../images/icons/icon-github.png';
+import IconPreview from '../../../images/icons/icon-play.png';
+
 
 export class Project extends Component {
 
@@ -51,8 +55,14 @@ export class Project extends Component {
         </div>
 
         <div className='tile-demo'>
-          <button className='btn-source'>Code</button>
-          <button className='btn-demo' onClick={this.props.demoClick.bind(this.props.demoClick, component)}>Demo</button>
+          <button className='btn-source'>
+            <img src={IconGithub} />
+            <label>Code</label>
+          </button>
+          <button className='btn-demo' onClick={this.props.demoClick.bind(this.props.demoClick, component)}>
+            <img src={IconPreview} />
+            <label>Demo</label>
+          </button>
         </div>
       </div>
     )

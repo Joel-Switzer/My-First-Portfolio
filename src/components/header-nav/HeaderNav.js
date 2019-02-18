@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
-import Resume from './Resume.pdf';
-import IconDownload from './icon-download.png';
+import Resume from '../Resume.pdf';
+import IconDownload from '../../images/icons/icon-download.png';
 import './HeaderNav.css';
 
 // Variables for scroll event listener
@@ -77,7 +77,6 @@ export class NavBar extends Component {
             break;
         }
       }
-      
 
       if (this.state.menuOpen === true) {
         this.setState({ menuOpen: false })
@@ -108,7 +107,6 @@ export class NavBar extends Component {
                 <div className='menu-div' onClick={this.openMenu}>
                   <span><div className={btnMenu}>&#187;</div>Menu</span>
                 </div>
-
                 <ul className={menu}>
                   <li ><Link to='about-me' 
                     activeClass='active-link'
@@ -134,11 +132,10 @@ export class NavBar extends Component {
                   </li>
                   <li className='resume-download'>
                     <a href={Resume} download>
-                    Resume <img src={IconDownload} alt='download' />
+                      Resume <img src={IconDownload} alt='download' />
                     </a>
                   </li>
                 </ul>
-
               </nav>
             </div> 
           </div>
