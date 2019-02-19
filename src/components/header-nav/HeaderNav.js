@@ -127,7 +127,7 @@ export class NavBar extends Component {
                     activeClass='active-link'
                     spy={true}
                     smooth={true}
-                    offset={-242}
+                    offset={-236}
                     duration={500}> Contact Me </Link>
                   </li>
                   <li className='resume-download'>

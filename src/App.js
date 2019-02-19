@@ -84,11 +84,11 @@ class App extends Component {
                 a4.classList.add('contact-animation')
                 window.setTimeout(() => { 
                   a4.classList.remove('contact-animation')
-                }, 2000);
-              }, 2000);
-            }, 2000);
-          }, 2000);
-        }, 2000);
+                }, 1100);
+              }, 1100);
+            }, 1100);
+          }, 1100);
+        }, 1100);
 
         // flag so animation doesn't re-trigger on scroll up
         this.setState({
@@ -98,7 +98,7 @@ class App extends Component {
     }
 
   render() {
-
+    console.log("If you can see this you're awesome!")
     this.skillCascade();
     return (
       <div className="App">
@@ -173,30 +173,39 @@ class App extends Component {
               </a>
             </div>
             <div id='my-email' className='no-display'>
-              <img className='social-icon' src={IconEmail} alt='Gmail icon' />
-              <span id='email-address'>Email</span>
-              <p>JoelSwitzer1@gmail.com</p>
+              <a href='mailto: Joelswitzer1@gmail.com' target='_blank' rel='noopener noreferrer'>
+                <img className='social-icon' src={IconEmail} alt='Gmail icon' />
+                <span id='email-address'>Email</span>
+                <p>JoelSwitzer1@gmail.com</p>
+              </a>
             </div>
             <div id='my-phone' className='no-display'>
               <img className='social-icon' src={IconPhone} alt='Phone icon' />
-              <span>Phone 
+              <span>
+                Phone 
                 <br />
                 <p>832-872-8899</p>
               </span>
             </div>
             <div id='my-github' className='no-display'>
               <img className='social-icon' src={IconGithub} alt='Github icon' />
-              <span>GitHub 
-                <br />
-                <p>GITHUB LINK</p>
-              </span>
+              <a href='https://github.com/Joel-Switzer/' target='_blank' rel='noopener noreferrer'>
+                <span>
+                  GitHub 
+                  <br />
+                  <p>Github.com/Joel-Switzer/</p>
+                </span>
+              </a>
             </div>
             <div id='my-linkedin' className='no-display'>
               <img className='social-icon' src={IconLinkedin} alt='LinkedIn icon' />
-              <span>LinkedIn
-                <br />
-                <p>LINKEDIN LINK</p>
-              </span>
+              {/* <a href='#' target='_blank' rel='noopener noreferrer'> */}
+                <span>
+                  LinkedIn
+                  <br />
+                  <p>LINKEDIN LINK</p>
+                </span>
+              {/* </a> */}
             </div>
           </div>
         </section>

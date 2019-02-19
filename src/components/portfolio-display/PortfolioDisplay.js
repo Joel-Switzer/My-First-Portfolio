@@ -26,6 +26,7 @@ export class PortfolioDisplay extends Component {
           name: 'React.JS To-do List',
           component: <TodoListApp />,
           imgSrc: PreviewTodo,
+          github: 'https://github.com/Joel-Switzer/React.js-Todo-List',
           skills: [
             'React.JS',
             'HTML & CSS'
@@ -36,6 +37,7 @@ export class PortfolioDisplay extends Component {
           name: 'React.JS Calculator',
           component: <CalculatorApp />,
           imgSrc: PreviewCalc,
+          github: 'https://github.com/Joel-Switzer/React.js-Calculator',
           skills: [
             'React.JS',
             'HTML & CSS',
@@ -47,10 +49,13 @@ export class PortfolioDisplay extends Component {
           name: 'This Website',
           component: <h1>This website is the demo!</h1>,
           imgSrc: PreviewThisWebsite,
+          github: 'https://github.com/Joel-Switzer/My-First-Portfolio',
           skills: [
             'React.JS',
             'Responsive CSS',
-            'HTML5'
+            'HTML5',
+            'React-scroll',
+            'React-waypoint'
           ]
         },
         {
@@ -61,7 +66,8 @@ export class PortfolioDisplay extends Component {
           skills: [
             'Testing',
             'More testing',
-            'Even more testing'
+            'Even more testing',
+            'Fourth skill'
           ]
         }
       ]

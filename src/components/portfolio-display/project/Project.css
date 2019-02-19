@@ -54,6 +54,13 @@
       border-bottom: 1px groove #15b0f6;
       min-width: 10rem;
     }
+    .skills-list li .norank {
+      font-size: 1rem;
+      padding-right: .7rem;
+      padding-left: .6rem;
+      font-weight: bold;
+      color: skyblue;
+    }
 
 
   /*    Demo slider    */
@@ -79,6 +86,7 @@
       left: 72%;
     }
     .btn-source {
+      display: button;
       left: 28%;
     }
     .btn-source img,

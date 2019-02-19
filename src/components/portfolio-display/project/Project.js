@@ -11,28 +11,30 @@ export class Project extends Component {
 
   // Place medals next to the first and second place skills
   rankSkill = (i) => {
-    let first = <span role='img' aria-label='First place' className='rank-1'>&#129351;</span>;
-    let second = <span role='img' aria-label='Second place' className='rank-2'>&#129352;</span>;
-    let third = <span role='img' aria-label='Third place'>&#x1F949;</span>;
-    let rank = '';
+    let first = <span role='img' aria-label='First place' className='rank-1'>&#129351;</span>
+    let second = <span role='img' aria-label='Second place' className='rank-2'>&#129352;</span>
+    let third = <span role='img' aria-label='Third place'>&#x1F949;</span>
+    let norank = <span className='norank'>&gt;</span>
+    let rank = ''
     switch (i) {
       case 0:
-        rank = first;
-        break;
+        rank = first
+        break
       case 1:
-        rank = second;
-        break;
+        rank = second
+        break
       case 2:
-        rank = third;
+        rank = third
         break
       default:
+        rank = norank
         break
     }
-    return rank;
+    return rank
   }
 
   render() {
-    const {name, imgSrc, skills, component} = this.props.project // Destructure
+    const {name, imgSrc, skills, component, github} = this.props.project // Destructure
     return (
       <div className='project-tile'>
         <div className='tile-info'> 
@@ -45,9 +47,8 @@ export class Project extends Component {
             <ul className='skills-list'>
               {skills.map((skill, i) => (
                 <li key={i}>
-                  {i + 1} - {' '} 
+                  {this.rankSkill(i)} {' '} 
                   {skill}
-                  {this.rankSkill(i)}
                 </li>
               ))}
             </ul>
@@ -55,10 +56,12 @@ export class Project extends Component {
         </div>
 
         <div className='tile-demo'>
-          <button className='btn-source'>
-            <img src={IconGithub} alt='Github' />
-            <label>Code</label>
-          </button>
+          <a href={github} target='_blank' rel='noopener noreferrer'>
+            <button className='btn-source'>
+              <img src={IconGithub} alt='Github' />
+              <label>Code</label>
+            </button>
+          </a>
           <button className='btn-demo' onClick={this.props.demoClick.bind(this.props.demoClick, component)}>
             <img src={IconPreview} alt='Preview'/>
             <label>Demo</label>
