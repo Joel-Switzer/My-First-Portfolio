@@ -18,10 +18,7 @@
   }
   .show-modal {
     visibility: show;
-    -webkit-animation-name: animateDrop;
-    -webkit-animation-duration: 1s;
-    animation-name: animateDrop;
-    animation-duration: 1s
+    animation: animateDrop 1.5s ease-out;
   }
   .demo-close {
     position: absolute;
@@ -67,7 +64,7 @@
 
   @keyframes animateDrop {
     0% {
-      transform: translateY(-100%) translateX(-50%);
+      transform: translateY(-200%) translateX(-50%);
       opacity: 0;
     }
     100% {

@@ -125,7 +125,7 @@ export class PortfolioDisplay extends Component {
           </div>
         </div>
 
-        <h2 className='section-header clip-top'><em>CONTACT ME</em></h2>
+        <div className='section-header clip-top'></div>
       </div>
     )
   }

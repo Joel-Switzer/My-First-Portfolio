@@ -56,11 +56,11 @@ export class Project extends Component {
 
         <div className='tile-demo'>
           <button className='btn-source'>
-            <img src={IconGithub} />
+            <img src={IconGithub} alt='Github' />
             <label>Code</label>
           </button>
           <button className='btn-demo' onClick={this.props.demoClick.bind(this.props.demoClick, component)}>
-            <img src={IconPreview} />
+            <img src={IconPreview} alt='Preview'/>
             <label>Demo</label>
           </button>
         </div>
