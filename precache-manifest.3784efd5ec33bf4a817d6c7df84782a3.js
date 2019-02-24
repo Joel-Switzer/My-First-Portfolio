@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/icon-responsive.44e9c343.png"
   },
   {
-    "revision": "54ed57016a907fce5da4",
-    "url": "/My-First-Portfolio/static/css/main.34be9a72.chunk.css"
+    "revision": "98744103ce2dc4c45b15",
+    "url": "/My-First-Portfolio/static/css/main.54248af0.chunk.css"
   },
   {
     "revision": "185bdb23b441095de2b3",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/icon-mysql.e3d46f21.png"
   },
   {
-    "revision": "54ed57016a907fce5da4",
-    "url": "/My-First-Portfolio/static/js/main.54ed5701.chunk.js"
+    "revision": "98744103ce2dc4c45b15",
+    "url": "/My-First-Portfolio/static/js/main.98744103.chunk.js"
   },
   {
     "revision": "dd5da47993596cec12be922061c0a681",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/bg-code.ac0ce996.png"
   },
   {
-    "revision": "bb50427db4758da425c0ca7e4ae87a0d",
+    "revision": "1fbf59a7cb4059ee078704350bb883ea",
     "url": "/My-First-Portfolio/index.html"
   }
 ];
