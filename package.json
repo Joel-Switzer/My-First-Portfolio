@@ -2,16 +2,17 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joel-switzer.github.io/My-First-Portfolio/",
   "dependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-on-screen": "^2.1.1",
     "react-scripts": "2.1.3",
     "react-scroll": "^1.7.10",
-    "react-visibility-sensor": "^5.0.2",
     "react-waypoint": "^8.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -25,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
