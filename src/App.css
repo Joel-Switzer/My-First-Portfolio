@@ -66,6 +66,13 @@ body {
   padding-top: 4.5rem;
   padding-bottom: 1rem;
 }
+/* Optimize background image for faster loading on mobile*/
+@media only screen and (max-width: 500px) {
+  #my-portfolio {
+    background: linear-gradient(to top, rgb(0, 105, 148, .3), rgb(0, 105, 148, .3)), 
+    url(./images/backgrounds/bg-code-mobile.png);
+  }
+}
 
 .avatar-container {
   display: flex;
@@ -177,7 +184,13 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
+/* Optimize background image for faster loading on mobile*/
+@media only screen and (max-width: 500px) {
+  #my-portfolio {
+    background: linear-gradient(to top, rgb(0, 105, 148, .3), rgb(0, 105, 148, .3)), 
+    url(./images/backgrounds/bg-code-dark-mobile.jpg);
+  }
+}
 /*    Contact me section    */
 #contact-me {
   background-color: #192231;
