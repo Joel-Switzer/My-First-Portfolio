@@ -1,12 +1,12 @@
 {
-  "main.css": "/My-First-Portfolio/static/css/main.54248af0.chunk.css",
-  "main.js": "/My-First-Portfolio/static/js/main.98744103.chunk.js",
-  "main.js.map": "/My-First-Portfolio/static/js/main.98744103.chunk.js.map",
+  "main.css": "/My-First-Portfolio/static/css/main.78a79d12.chunk.css",
+  "main.js": "/My-First-Portfolio/static/js/main.c77ab82c.chunk.js",
+  "main.js.map": "/My-First-Portfolio/static/js/main.c77ab82c.chunk.js.map",
   "static/js/1.185bdb23.chunk.js": "/My-First-Portfolio/static/js/1.185bdb23.chunk.js",
   "static/js/1.185bdb23.chunk.js.map": "/My-First-Portfolio/static/js/1.185bdb23.chunk.js.map",
   "runtime~main.js": "/My-First-Portfolio/static/js/runtime~main.37d5ffa8.js",
   "runtime~main.js.map": "/My-First-Portfolio/static/js/runtime~main.37d5ffa8.js.map",
-  "static/media/App.css": "/My-First-Portfolio/static/media/bg-code-dark.8f8923a4.jpg",
+  "static/media/App.css": "/My-First-Portfolio/static/media/bg-code.620dbc42.png",
   "static/media/Resume.pdf": "/My-First-Portfolio/static/media/Resume.c8813772.pdf",
   "static/media/this-website-preview.png": "/My-First-Portfolio/static/media/this-website-preview.05479ae5.png",
   "static/media/icon-javascript.png": "/My-First-Portfolio/static/media/icon-javascript.00d62e6f.png",
@@ -17,8 +17,8 @@
   "static/media/icon-linked-in.png": "/My-First-Portfolio/static/media/icon-linked-in.064f0921.png",
   "static/media/Project.css": "/My-First-Portfolio/static/media/bg-mobo.17aaf697.jpg",
   "static/media/todo-preview.png": "/My-First-Portfolio/static/media/todo-preview.457702ab.png",
-  "static/css/main.54248af0.chunk.css.map": "/My-First-Portfolio/static/css/main.54248af0.chunk.css.map",
+  "static/css/main.78a79d12.chunk.css.map": "/My-First-Portfolio/static/css/main.78a79d12.chunk.css.map",
   "index.html": "/My-First-Portfolio/index.html",
-  "precache-manifest.3784efd5ec33bf4a817d6c7df84782a3.js": "/My-First-Portfolio/precache-manifest.3784efd5ec33bf4a817d6c7df84782a3.js",
+  "precache-manifest.3a478dda63b97e07c06ac76a9b89ee94.js": "/My-First-Portfolio/precache-manifest.3a478dda63b97e07c06ac76a9b89ee94.js",
   "service-worker.js": "/My-First-Portfolio/service-worker.js"
 }
