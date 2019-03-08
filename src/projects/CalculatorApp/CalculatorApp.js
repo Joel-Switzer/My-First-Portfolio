@@ -20,12 +20,12 @@ export class CalculatorApp extends Component {
     if (!isNaN(parseInt(e.target.value))) {
       this.setState({current: (temp + e.target.value)})
     } 
-    else if (e.target.value === '.') {
+    else if (e.currentTarget.value === '.') {
       // Check for multiple decimals
       const count = temp.split('.').length - 1
       if (count < 1) {
         this.setState({
-          current: (temp + e.target.value)
+          current: (temp + e.currentTarget.value)
         })
       }
     }

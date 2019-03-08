@@ -22,14 +22,17 @@ export class PortfolioDisplay extends Component {
       doorsTriggered: false,
       projects: [
         {
-          id: 0,
-          name: 'React.JS To-do List',
-          component: <TodoListApp />,
-          imgSrc: PreviewTodo,
-          github: 'https://github.com/Joel-Switzer/React.js-Todo-List',
+          id: 2,
+          name: 'This Website',
+          component: <h1>This website is the demo!</h1>,
+          imgSrc: PreviewThisWebsite,
+          github: 'https://github.com/Joel-Switzer/My-First-Portfolio',
           skills: [
             'React.JS',
-            'HTML & CSS'
+            'Responsive CSS',
+            'HTML',
+            'React-scroll',
+            'React-waypoint'
           ]
         },
         {
@@ -45,31 +48,28 @@ export class PortfolioDisplay extends Component {
           ]
         },
         {
-          id: 2,
-          name: 'This Website',
-          component: <h1>This website is the demo!</h1>,
-          imgSrc: PreviewThisWebsite,
-          github: 'https://github.com/Joel-Switzer/My-First-Portfolio',
+          id: 0,
+          name: 'React.JS To-do List',
+          component: <TodoListApp />,
+          imgSrc: PreviewTodo,
+          github: 'https://github.com/Joel-Switzer/React.js-Todo-List',
           skills: [
             'React.JS',
-            'Responsive CSS',
-            'HTML5',
-            'React-scroll',
-            'React-waypoint'
+            'HTML & CSS'
           ]
         },
-        {
-          id: 100,
-          name: 'Test Card',
-          component: <h1>Test Card</h1>,
-          imgSrc: '',
-          skills: [
-            'Testing',
-            'More testing',
-            'Even more testing',
-            'Fourth skill'
-          ]
-        }
+        // {
+        //   id: 100,
+        //   name: 'Test Card',
+        //   component: <h1>Test Card</h1>,
+        //   imgSrc: '',
+        //   skills: [
+        //     'Testing',
+        //     'More testing',
+        //     'Even more testing',
+        //     'Fourth skill'
+        //   ]
+        // }
       ]
     }
   }

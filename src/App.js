@@ -8,7 +8,7 @@ import './App.css';
 import Resume from './components/Resume.pdf';
 
 // Images & Icons
-import Avatar from './images/other/avatar.png';
+import Avatar from './images/other/avatar.jpg';
 import IconHtml from './images/icons/icon-html5.png';
 import IconCss from './images/icons/icon-css3.png';
 import IconJs from './images/icons/icon-javascript.png';
@@ -111,7 +111,7 @@ class App extends Component {
           </div>
 
           <div className='description'>
-            <h1>Hi, I'm <span>Joel Switzer</span>, an aspiring web developer. <br />My skills include:</h1>
+            <h1>Hi, I'm <span>Joel Switzer</span>, a web developer. <br />My skills include:</h1>
             <div id='skill-icons'>
               <div id='s1' className='logo-box hidden'>
                 <div>
