@@ -199,13 +199,13 @@ class App extends Component {
             </div>
             <div id='my-linkedin' className='no-display'>
               <img className='social-icon' src={IconLinkedin} alt='LinkedIn icon' />
-              {/* <a href='#' target='_blank' rel='noopener noreferrer'> */}
+              <a href='http://www.linkedin.com/in/Joel-Switzer' target='_blank' rel='noopener noreferrer'>
                 <span>
                   LinkedIn
                   <br />
-                  <p>LINKEDIN LINK</p>
+                  <p>Linkedin.com/in/Joel-Switzer</p>
                 </span>
-              {/* </a> */}
+              </a>
             </div>
           </div>
         </section>
