@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/icon-responsive.44e9c343.png"
   },
   {
-    "revision": "a64953387f6b051af068",
-    "url": "/My-First-Portfolio/static/css/main.41bd5915.chunk.css"
+    "revision": "f755db55304aa91f3f30",
+    "url": "/My-First-Portfolio/static/css/main.e38e5d52.chunk.css"
   },
   {
     "revision": "185bdb23b441095de2b3",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/js/runtime~main.37d5ffa8.js"
   },
   {
-    "revision": "c88137724b4048d3a2293407cc93a272",
-    "url": "/My-First-Portfolio/static/media/Resume.c8813772.pdf"
+    "revision": "05605f144c1313ce0e59227693554a0c",
+    "url": "/My-First-Portfolio/static/media/Resume.05605f14.pdf"
   },
   {
     "revision": "457702ab8f87ece1622ec5150bac5698",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/icon-mysql.e3d46f21.png"
   },
   {
-    "revision": "a64953387f6b051af068",
-    "url": "/My-First-Portfolio/static/js/main.a6495338.chunk.js"
+    "revision": "f755db55304aa91f3f30",
+    "url": "/My-First-Portfolio/static/js/main.f755db55.chunk.js"
   },
   {
     "revision": "dd5da47993596cec12be922061c0a681",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/bg-code.620dbc42.png"
   },
   {
-    "revision": "354161bfb2f9d1ccfdb6e86772c4e919",
+    "revision": "deb19bb34b23bbc1a78a1fb630860bd3",
     "url": "/My-First-Portfolio/index.html"
   }
 ];
