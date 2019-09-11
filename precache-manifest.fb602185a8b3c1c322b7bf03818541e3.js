@@ -4,20 +4,20 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/icon-responsive.44e9c343.png"
   },
   {
-    "revision": "f755db55304aa91f3f30",
-    "url": "/My-First-Portfolio/static/css/main.e38e5d52.chunk.css"
+    "revision": "2a242c0ee2e1877dbc11",
+    "url": "/My-First-Portfolio/static/css/main.8fd7fa83.chunk.css"
   },
   {
-    "revision": "185bdb23b441095de2b3",
-    "url": "/My-First-Portfolio/static/js/1.185bdb23.chunk.js"
+    "revision": "72a1055dff70536e16ea",
+    "url": "/My-First-Portfolio/static/js/1.72a1055d.chunk.js"
   },
   {
     "revision": "37d5ffa83c81c0166c8f",
     "url": "/My-First-Portfolio/static/js/runtime~main.37d5ffa8.js"
   },
   {
-    "revision": "05605f144c1313ce0e59227693554a0c",
-    "url": "/My-First-Portfolio/static/media/Resume.05605f14.pdf"
+    "revision": "e8799a8469b19d7799797551d6d60822",
+    "url": "/My-First-Portfolio/static/media/Resume.e8799a84.pdf"
   },
   {
     "revision": "457702ab8f87ece1622ec5150bac5698",
@@ -26,6 +26,10 @@ self.__precacheManifest = [
   {
     "revision": "12bd4426eee8d8ee0f9cbf0656aae2b3",
     "url": "/My-First-Portfolio/static/media/this-website-preview.12bd4426.png"
+  },
+  {
+    "revision": "0216fae517e07949c95e55aff8d10a61",
+    "url": "/My-First-Portfolio/static/media/sass-portfolio-icon.0216fae5.png"
   },
   {
     "revision": "5d9efd52e072cee458fd7be228744fba",
@@ -40,8 +44,8 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/icon-mysql.e3d46f21.png"
   },
   {
-    "revision": "f755db55304aa91f3f30",
-    "url": "/My-First-Portfolio/static/js/main.f755db55.chunk.js"
+    "revision": "2a242c0ee2e1877dbc11",
+    "url": "/My-First-Portfolio/static/js/main.2a242c0e.chunk.js"
   },
   {
     "revision": "dd5da47993596cec12be922061c0a681",
@@ -80,7 +84,7 @@ self.__precacheManifest = [
     "url": "/My-First-Portfolio/static/media/bg-code.620dbc42.png"
   },
   {
-    "revision": "deb19bb34b23bbc1a78a1fb630860bd3",
+    "revision": "3ffd40fee9b19389c074f85b854600d8",
     "url": "/My-First-Portfolio/index.html"
   }
 ];
